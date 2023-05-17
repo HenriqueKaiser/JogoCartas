@@ -1,0 +1,14 @@
+	Eduarda para Henrique
+
+Jogo de Cartas - Baralho
+
+Crie uma enumeração chamada "Naipe" com os seguintes valores: PAUS, COPAS, ESPADAS e OUROS. Essa enumeração irá representar os naipes das cartas do baralho.
+Crie uma enumeração chamada "Valor" com os seguintes valores: ÁS, DOIS, TRÊS, QUATRO, CINCO, SEIS, SETE, OITO, NOVE, DEZ, VALETE, DAMA e REI. Essa enumeração irá representar os valores das cartas do baralho.
+Crie uma classe abstrata chamada "Carta" com os seguintes atributos:
+Um campo para armazenar o naipe da carta (use a enumeração "Naipe").
+Um campo para armazenar o valor da carta (use a enumeração "Valor").
+Um construtor que recebe o naipe e o valor da carta e inicializa os campos correspondentes.
+Um método abstrato chamado "descreverCarta" que será implementado nas subclasses. Este método retorna uma descrição da carta, por exemplo, "Ás de Paus".
+Crie uma classe chamada "CartaNormal" que estende a classe abstrata "Carta". Esta classe deve implementar o método "descreverCarta" retornando uma descrição no formato "{valor} de {naipe}".
+Crie uma classe chamada "CartaEspecial" que estende a classe abstrata "Carta". Esta classe deve ter um campo adicional para armazenar a descrição da carta especial (por exemplo, "Coringa") e implementar o método "descreverCarta" retornando a descrição da carta especial.
+No método principal (main) do programa, crie algumas instâncias das classes "CartaNormal" e "CartaEspecial", atribua valores diferentes aos atributos de cada carta e imprima a descrição de cada uma chamando o método "descreverCarta".
